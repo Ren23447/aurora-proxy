@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Proxy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+
+    <div class="container">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">A</div>
+          <span>Aurora Proxy</span>
+        </div>
+
+        <button id="newTabBtn" class="nav-btn" type="button">Open direct</button>
+      </header>
+
+      <main class="hero">
+        <section class="panel main-panel">
+          <p class="eyebrow">Self-hosted browsing</p>
+          <h1>Browse the web from your own app.</h1>
+          <p class="subtext">
+            A sleek, modern proxy portal designed to feel premium without depending on a third-party unblocker.
+          </p>
+
+          <form id="proxyForm" class="searchbar" autocomplete="off">
+            <input id="urlInput" type="text" value="https://example.com" spellcheck="false" />
+            <button type="submit">Open</button>
+          </form>
+
+          <div class="quick-links">
+            <button class="chip" data-url="https://example.com" type="button">example.com</button>
+            <button class="chip" data-url="https://github.com" type="button">github.com</button>
+            <button class="chip" data-url="https://wikipedia.org" type="button">wikipedia.org</button>
+          </div>
+        </section>
+
+        <aside class="panel side-panel">
+          <div class="service">
+            <span class="status-dot"></span>
+            <span>Frontend + backend split</span>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><span>UI</span><strong>Modern</strong></div>
+            <div class="stat"><span>Host</span><strong>GitHub Pages</strong></div>
+            <div class="stat"><span>Proxy</span><strong>Serverless API</strong></div>
+          </div>
+        </aside>
+      </main>
+
+      <section class="browser panel">
+        <div class="toolbar">
+          <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div id="browserUrl" class="browser-url">https://example.com</div>
+        </div>
+
+        <iframe id="proxyFrame" title="Web proxy viewer" sandbox="allow-scripts allow-forms allow-popups"></iframe>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
