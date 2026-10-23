@@ -1,4 +1,4 @@
-const PROXY_API = 'https://your-worker-name.workers.dev/proxy';
+const PROXY_API = 'https://your-backend-url.example.com/proxy';
 
 const form = document.getElementById('proxyForm');
 const input = document.getElementById('urlInput');
